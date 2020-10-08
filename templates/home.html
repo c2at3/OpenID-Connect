@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - OpenId Connect</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='images/icons/favicon.ico')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}" />
+</head>
+
+<body>
+    <div id="curtain">
+        <div id="amongus-run"></div>
+    </div>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('{{url_for('static', filename='images/bg-01.jpg')}}')">
+            <div class="wrap-login100">
+                <div class="wrap-avatar">
+                    <img class="avatar" src="{{info.profile_pic}}"></img>
+                </div>
+                <div class="wrap-content">
+                    <div class="item">
+                        <span class="title">Name</span>
+                        <span class="content">{{info.name}}</span>
+                    </div>
+                    <div class="item">
+                        <span class="title">Email</span>
+                        <span class="content">{{info.email}}</span>
+                    </div>
+                </div>
+                <div class="container-login100-form-btn mt-2">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <a href="/logout" class="login100-form-btn">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+
+</html>

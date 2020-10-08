@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login - OpenId Connect</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="{{url_for('static', filename='images/icons/favicon.ico')}}" />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}" />
+</head>
+
+<body>
+    <div id="curtain"></div>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('{{url_for('static', filename='images/bg-01.jpg')}}')">
+            <div class="wrap-login100">
+                <div class="title-hihi">
+                    <h2>A simple way</h2>
+                    <h3>To view your google account information</h3>
+                </div>
+                <div class="container-login100-form-btn mt-2">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <a href="/login" class="login100-form-btn">Login with Google</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+  </body>
+</html>
